@@ -16,7 +16,7 @@ Most of this is company and client work, so the code is private. The products ar
 <td width="50%" valign="top">
 <a href="https://www.wakeel.ai/"><img src="assets/wakeel-ai.webp" alt="Wakeel AI" /></a>
 <h4><a href="https://www.wakeel.ai/">Wakeel AI</a>, legal case management</h4>
-<sub>Laravel · MCP · Gemini · WhatsApp · Google Cloud Run · Next.js</sub>
+<sub>MCP · Gemini · WhatsApp · Google Cloud Run · Next.js</sub>
 <ul>
 <li>MCP server with OAuth so lawyers can work with their case data from ChatGPT and Claude</li>
 <li>One shared AI tool layer for ChatGPT, Claude and WhatsApp: every write needs confirmation, each firm sees only its own data, every AI change is logged</li>
@@ -89,19 +89,17 @@ Most of this is company and client work, so the code is private. The products ar
 - **[Backstage](https://stage-fe--backstage-solutions-us.us-central1.hosted.app/en/home)**, English and Arabic talent marketplace with AI job matching.
 - **[Timegram](https://www.timegram.io/)**, time tracking and team capacity platform for remote teams.
 - **AR Room Measure**, Android app that measures rooms using AR (Expo, ARCore).
-- **Client websites in Next.js:** THK (with Strapi CMS), Lakewise, [Steelink](https://steelink.com.pk/), [The Executive Atelier](https://the-executive-atelier.vercel.app) and the AtomPoint AI agents site.
+- **Client websites in Next.js:** THK (with Strapi CMS), Lakewise, [Steelink](https://steelink.com.pk/) and the AtomPoint AI agents site.
 
 ### Open source
 
-**[Dograh](https://github.com/dograh-hq/dograh)**, an open-source voice AI platform (Python, Pipecat). Five merged features in its embed widget: `onTranscript`, `onToolCall`, `sendText`, `updateContext`, and choosing a text-to-speech voice per session.
+**[Dograh](https://github.com/dograh-hq/dograh)**, an open-source voice AI platform built on Pipecat. Five merged features in its embed widget: `onTranscript`, `onToolCall`, `sendText`, `updateContext`, and choosing a text-to-speech voice per session.
 
 ### What I work with
 
 **Languages:**
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 
 **Frontend & mobile:**
 ![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
@@ -114,7 +112,6 @@ Most of this is company and client work, so the code is private. The products ar
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
 ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat&logo=nestjs&logoColor=white)
 ![Express](https://img.shields.io/badge/Express-000000?style=flat&logo=express&logoColor=white)
-![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat&logo=laravel&logoColor=white)
 ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat&logo=prisma&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
