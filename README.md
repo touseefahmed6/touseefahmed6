@@ -1,6 +1,6 @@
 ## Hi, I'm Touseef 👋
 
-I'm a full stack developer at AtomPoint in Karachi. I build web apps and AI tools that people use every day: legal research assistants, voice agents, email systems and automations that take boring work off people's plates.
+I'm a full stack developer at AtomPoint in Karachi. Most of my work is putting AI into real products: an MCP server and WhatsApp agent for a legal platform, a real-time voice agent, an AI inbox, and the backends that keep them reliable.
 
 I started at AtomPoint as an intern in May 2024 and have been shipping production apps there since, alongside finishing my Software Engineering degree in 2025.
 
@@ -15,86 +15,137 @@ Most of this is company and client work, so the code is private. The products ar
 <tr>
 <td width="50%" valign="top">
 <a href="https://www.wakeel.ai/"><img src="assets/wakeel-ai.webp" alt="Wakeel AI" /></a>
-<h4><a href="https://www.wakeel.ai/">Wakeel AI</a></h4>
-<sub>Next.js · Node.js · OpenAI · Firebase</sub><br><br>
-AI legal assistant for lawyers in Pakistan. Scrapes statutes and case law, converts them to clean text, and lets lawyers ask questions, review documents and analyse cases through a chatbot.
+<h4><a href="https://www.wakeel.ai/">Wakeel AI</a>, legal case management</h4>
+<sub>Laravel · MCP · Gemini · WhatsApp · Google Cloud Run · Next.js</sub>
+<ul>
+<li>MCP server with OAuth so lawyers can work with their case data from ChatGPT and Claude</li>
+<li>One shared AI tool layer for ChatGPT, Claude and WhatsApp: every write needs confirmation, each firm sees only its own data, every AI change is logged</li>
+<li>WhatsApp agent on Gemini that understands voice notes and replies in the user's language</li>
+<li>Moved production from Heroku to Cloud Run with zero data loss</li>
+</ul>
 </td>
 <td width="50%" valign="top">
 <a href="https://setup.speakto.site/"><img src="assets/speakto.webp" alt="SpeakTo" /></a>
-<h4><a href="https://setup.speakto.site/">SpeakTo, voice AI agent</a></h4>
-<sub>Next.js · Node.js · Whisper · Realtime voice</sub><br><br>
-A voice agent that talks to website visitors in real time, answers their questions out loud and guides them through the site.
+<h4><a href="https://setup.speakto.site/">SpeakTo</a>, real-time voice agent</h4>
+<sub>Gemini Live API · Next.js · Express + WebSockets · Firecrawl · Expo</sub>
+<ul>
+<li>Talks to website visitors in real time and answers from the site's own pages</li>
+<li>Moves the visitor around the site and highlights things on the page while it talks</li>
+<li>Rebuilt audio playback as a continuous 24 kHz audio worklet to fix broken-up audio</li>
+<li>Hands off to a human via Chatwoot or WhatsApp, with Stripe billing and a mobile app</li>
+</ul>
 </td>
 </tr>
 <tr>
+<td width="50%" valign="top">
+<a href="https://hub.trysimpl.ai/"><img src="assets/email-manager.webp" alt="Simpl AI Email Manager" /></a>
+<h4><a href="https://hub.trysimpl.ai/">Simpl</a>, AI email manager</h4>
+<sub>Node.js · Cloud Functions · MongoDB · GPT-5.1 · Gemini · Langfuse</sub>
+<ul>
+<li>Sorts incoming Gmail and Outlook mail and writes draft replies</li>
+<li>Rules run before the AI is called, which cuts LLM cost</li>
+<li>Langfuse tracing and a cost calculator on every LLM call</li>
+<li>Stripe subscriptions, encryption and unit tests</li>
+</ul>
+</td>
 <td width="50%" valign="top">
 <a href="https://www.gradientai.co.uk/"><img src="assets/gradient-ai.webp" alt="Gradient AI" /></a>
-<h4><a href="https://www.gradientai.co.uk/">Gradient AI</a></h4>
-<sub>Next.js · NestJS · PostgreSQL · Supabase · Gemini</sub><br><br>
-Multi-tenant education analytics SaaS for UK schools. Gemini pulls topics out of exam papers, then maps every student's marks to show weak topics and at-risk students.
-</td>
-<td width="50%" valign="top">
-<a href="https://hub.trysimpl.ai/"><img src="assets/email-manager.webp" alt="AI Email Manager" /></a>
-<h4><a href="https://hub.trysimpl.ai/">AI Email Manager</a></h4>
-<sub>Node.js · OpenAI · Langfuse · MongoDB</sub><br><br>
-Sorts incoming mail into labels like To Respond and FYI, writes draft replies, and traces every LLM call in Langfuse so token cost stays visible.
+<h4><a href="https://www.gradientai.co.uk/">Gradient AI</a>, education analytics</h4>
+<sub>NestJS · Prisma · PostgreSQL · BullMQ · Gemini · Next.js</sub>
+<ul>
+<li>Gemini pulls topics out of exam papers, with every result checked and retried if wrong</li>
+<li>Mark analysis engine that finds weak topics and at-risk students</li>
+<li>Row-level security, BullMQ queues, Stripe billing, audit logs, 81 unit tests and CI</li>
+</ul>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
-<img src="assets/hr-automation.webp" alt="HR Workflow Automation" />
-<h4>HR Workflow Automation</h4>
-<sub>Node.js · Slack API · Cloud Functions · Firestore · OpenAI</sub><br><br>
-Replaced email and spreadsheets for a 30-person company. Attendance, leave, WFH requests, approvals and reports all run from Slack.
+<img src="assets/hr-automation.webp" alt="HR Slack bot" />
+<h4>HR Slack bot</h4>
+<sub>Node.js · Slack API · Cloud Functions · OpenAI</sub>
+<ul>
+<li>Leave, work from home and approval flows inside Slack</li>
+<li>Monthly attendance reports for a 30-person company</li>
+<li>Unlocks the office gate from Slack</li>
+</ul>
 </td>
 <td width="50%" valign="top">
-<img src="assets/social-generator.webp" alt="AI Social Media Generator" />
-<h4>AI Social Media Generator</h4>
-<sub>Next.js · Supabase · Gemini · Firecrawl</sub><br><br>
-Give it a company's website and it pulls out the brand colours, fonts and logo, then generates on-brand posts for every platform.
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-<a href="https://stage-fe--backstage-solutions-us.us-central1.hosted.app/en/home"><img src="assets/backstage.webp" alt="Backstage" /></a>
-<h4><a href="https://stage-fe--backstage-solutions-us.us-central1.hosted.app/en/home">Backstage</a></h4>
-<sub>Next.js · Node.js · MongoDB · OpenAI · i18n / RTL</sub><br><br>
-English and Arabic talent marketplace connecting creative talent with production companies, with real-time translation and AI job matching.
-</td>
-<td width="50%" valign="top">
-<a href="https://www.timegram.io/"><img src="assets/timegram.webp" alt="Timegram" /></a>
-<h4><a href="https://www.timegram.io/">Timegram</a></h4>
-<sub>Next.js · Node.js · MongoDB · TypeScript</sub><br><br>
-Time tracking and team capacity platform for remote teams, with dashboards, logging, invoicing and project tracking.
+<img src="assets/social-generator.webp" alt="AI social image generator" />
+<h4>AI social image generator</h4>
+<sub>Next.js · Gemini · OpenAI · Firecrawl</sub>
+<ul>
+<li>Pulls a brand's look from any URL and makes a 5-slide carousel</li>
+<li>AI paints only the background, then the real fonts, colours and logo go on top, so it looks professional</li>
+</ul>
 </td>
 </tr>
 </table>
 
-**Also built:** [Steelink](https://steelink.com.pk/) (corporate site, Next.js) · WhatsApp AI bot for restaurants that takes reservations and payments (Node.js, Groq, n8n) · WhatsApp lead qualification bot for real estate (Node.js, Gemini, n8n)
+### More work
+
+- **Alsahm**, investing platform for the Oman stock exchange. One NestJS API serves the website, the Expo mobile app and the admin panel, in English and Arabic. Paper trading, a trading competition, watchlists, price alerts and live market data.
+- **WhatsApp sales layer.** Self-hosted Evolution API connected to Chatwoot, with rules for routing each conversation to a salesperson, a sales panel, and tracking which ad each lead and sale came from.
+- **[Backstage](https://stage-fe--backstage-solutions-us.us-central1.hosted.app/en/home)**, English and Arabic talent marketplace with AI job matching.
+- **[Timegram](https://www.timegram.io/)**, time tracking and team capacity platform for remote teams.
+- **AR Room Measure**, Android app that measures rooms using AR (Expo, ARCore).
+- **Client websites in Next.js:** THK (with Strapi CMS), Lakewise, [Steelink](https://steelink.com.pk/), [The Executive Atelier](https://the-executive-atelier.vercel.app) and the AtomPoint AI agents site.
+
+### Open source
+
+**[Dograh](https://github.com/dograh-hq/dograh)**, an open-source voice AI platform (Python, Pipecat). Five merged features in its embed widget: `onTranscript`, `onToolCall`, `sendText`, `updateContext`, and choosing a text-to-speech voice per session.
 
 ### What I work with
 
+**Languages:**
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+
+**Frontend & mobile:**
 ![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white)
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat&logo=react&logoColor=61DAFB)
+![Expo](https://img.shields.io/badge/Expo-000020?style=flat&logo=expo&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white)
+
+**Backend & data:**
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
 ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat&logo=nestjs&logoColor=white)
 ![Express](https://img.shields.io/badge/Express-000000?style=flat&logo=express&logoColor=white)
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat&logo=laravel&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat&logo=prisma&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat&logo=supabase&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat&logo=firebase&logoColor=black)
 ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white)
+![BullMQ](https://img.shields.io/badge/BullMQ-E0234E?style=flat)
+![Stripe](https://img.shields.io/badge/Stripe-635BFF?style=flat&logo=stripe&logoColor=white)
+
+**AI:**
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat&logo=openai&logoColor=white)
 ![Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=flat&logo=googlegemini&logoColor=white)
+![Claude](https://img.shields.io/badge/Claude-D97757?style=flat&logo=claude&logoColor=white)
+![MCP](https://img.shields.io/badge/MCP-000000?style=flat&logo=modelcontextprotocol&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white)
-![Langfuse](https://img.shields.io/badge/Langfuse-0A0A0A?style=flat&logoColor=white)
+![Langfuse](https://img.shields.io/badge/Langfuse-0A0A0A?style=flat)
+![Firecrawl](https://img.shields.io/badge/Firecrawl-FF6B00?style=flat)
+
+**Automation & messaging:**
 ![n8n](https://img.shields.io/badge/n8n-EA4B71?style=flat&logo=n8n&logoColor=white)
+![Chatwoot](https://img.shields.io/badge/Chatwoot-1F93FF?style=flat&logo=chatwoot&logoColor=white)
+![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=flat&logo=whatsapp&logoColor=white)
+![Slack API](https://img.shields.io/badge/Slack_API-4A154B?style=flat&logo=slack&logoColor=white)
+
+**Cloud & tools:**
+![Google Cloud Run](https://img.shields.io/badge/Cloud_Run-4285F4?style=flat&logo=googlecloud&logoColor=white)
+![Cloud Tasks](https://img.shields.io/badge/Cloud_Tasks-4285F4?style=flat&logo=googlecloud&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=flat&logo=googlecloud&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
 
 ### What people I work with say
 
