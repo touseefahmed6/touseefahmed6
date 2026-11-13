@@ -54,10 +54,7 @@ Most of this is company and client work, so the code is private. Happy to walk t
 
 ### GitHub activity
 
-<p>
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=touseefahmed6&show_icons=true&hide_border=true&theme=tokyonight&include_all_commits=true" alt="GitHub stats" />
-  <img height="165" src="https://streak-stats.demolab.com?user=touseefahmed6&hide_border=true&theme=tokyonight" alt="GitHub streak" />
-</p>
+<img src="https://streak-stats.demolab.com?user=touseefahmed6&hide_border=true&theme=tokyonight" alt="GitHub streak" />
 
 ### Find me
 
