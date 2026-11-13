@@ -88,7 +88,6 @@ Most of this is company and client work, so the code is private. The products ar
 - **WhatsApp sales layer.** Self-hosted Evolution API connected to Chatwoot, with rules for routing each conversation to a salesperson, a sales panel, and tracking which ad each lead and sale came from.
 - **[Backstage](https://stage-fe--backstage-solutions-us.us-central1.hosted.app/en/home)**, English and Arabic talent marketplace with AI job matching.
 - **[Timegram](https://www.timegram.io/)**, time tracking and team capacity platform for remote teams.
-- **AR Room Measure**, Android app that measures rooms using AR (Expo, ARCore).
 - **Client websites in Next.js:** THK (with Strapi CMS), Lakewise, [Steelink](https://steelink.com.pk/) and the AtomPoint AI agents site.
 
 ### Open source
