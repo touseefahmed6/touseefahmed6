@@ -16,56 +16,56 @@ Most of this is company and client work, so the code is private. The products ar
 <td width="50%" valign="top">
 <a href="https://www.wakeel.ai/"><img src="assets/wakeel-ai.webp" alt="Wakeel AI" /></a>
 <h4><a href="https://www.wakeel.ai/">Wakeel AI</a></h4>
+<sub>Next.js · Node.js · OpenAI · Firebase</sub><br><br>
 AI legal assistant for lawyers in Pakistan. Scrapes statutes and case law, converts them to clean text, and lets lawyers ask questions, review documents and analyse cases through a chatbot.
-<br><br><sub>Next.js · Node.js · OpenAI · Firebase</sub>
 </td>
 <td width="50%" valign="top">
 <a href="https://setup.speakto.site/"><img src="assets/speakto.webp" alt="SpeakTo" /></a>
 <h4><a href="https://setup.speakto.site/">SpeakTo, voice AI agent</a></h4>
+<sub>Next.js · Node.js · Whisper · Realtime voice</sub><br><br>
 A voice agent that talks to website visitors in real time, answers their questions out loud and guides them through the site.
-<br><br><sub>Next.js · Node.js · Whisper · Realtime voice</sub>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 <a href="https://www.gradientai.co.uk/"><img src="assets/gradient-ai.webp" alt="Gradient AI" /></a>
 <h4><a href="https://www.gradientai.co.uk/">Gradient AI</a></h4>
+<sub>Next.js · NestJS · PostgreSQL · Supabase · Gemini</sub><br><br>
 Multi-tenant education analytics SaaS for UK schools. Gemini pulls topics out of exam papers, then maps every student's marks to show weak topics and at-risk students.
-<br><br><sub>Next.js · NestJS · PostgreSQL · Supabase · Gemini</sub>
 </td>
 <td width="50%" valign="top">
 <a href="https://hub.trysimpl.ai/"><img src="assets/email-manager.webp" alt="AI Email Manager" /></a>
 <h4><a href="https://hub.trysimpl.ai/">AI Email Manager</a></h4>
+<sub>Node.js · OpenAI · Langfuse · MongoDB</sub><br><br>
 Sorts incoming mail into labels like To Respond and FYI, writes draft replies, and traces every LLM call in Langfuse so token cost stays visible.
-<br><br><sub>Node.js · OpenAI · Langfuse · MongoDB</sub>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 <img src="assets/hr-automation.webp" alt="HR Workflow Automation" />
 <h4>HR Workflow Automation</h4>
+<sub>Node.js · Slack API · Cloud Functions · Firestore · OpenAI</sub><br><br>
 Replaced email and spreadsheets for a 30-person company. Attendance, leave, WFH requests, approvals and reports all run from Slack.
-<br><br><sub>Node.js · Slack API · Cloud Functions · Firestore · OpenAI</sub>
 </td>
 <td width="50%" valign="top">
 <img src="assets/social-generator.webp" alt="AI Social Media Generator" />
 <h4>AI Social Media Generator</h4>
+<sub>Next.js · Supabase · Gemini · Firecrawl</sub><br><br>
 Give it a company's website and it pulls out the brand colours, fonts and logo, then generates on-brand posts for every platform.
-<br><br><sub>Next.js · Supabase · Gemini · Firecrawl</sub>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 <a href="https://stage-fe--backstage-solutions-us.us-central1.hosted.app/en/home"><img src="assets/backstage.webp" alt="Backstage" /></a>
 <h4><a href="https://stage-fe--backstage-solutions-us.us-central1.hosted.app/en/home">Backstage</a></h4>
+<sub>Next.js · Node.js · MongoDB · OpenAI · i18n / RTL</sub><br><br>
 English and Arabic talent marketplace connecting creative talent with production companies, with real-time translation and AI job matching.
-<br><br><sub>Next.js · Node.js · MongoDB · OpenAI · i18n / RTL</sub>
 </td>
 <td width="50%" valign="top">
 <a href="https://www.timegram.io/"><img src="assets/timegram.webp" alt="Timegram" /></a>
 <h4><a href="https://www.timegram.io/">Timegram</a></h4>
+<sub>Next.js · Node.js · MongoDB · TypeScript</sub><br><br>
 Time tracking and team capacity platform for remote teams, with dashboards, logging, invoicing and project tracking.
-<br><br><sub>Next.js · Node.js · MongoDB · TypeScript</sub>
 </td>
 </tr>
 </table>
